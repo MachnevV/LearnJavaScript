@@ -30,16 +30,16 @@
 
     function Calculator(){
         this.read = function() {
-            a = +prompt("Введите первое число", 2);
-            b = +prompt("Введите первое число", 5);
+            this.a = +prompt("Введите первое число", 2);
+            this.b = +prompt("Введите первое число", 5);
         }
 
         this.sum = function() {
-            return a + b;
+            return this.a + this.b;
         };
 
         this.mul = function() {
-            return a * b;
+            return this.a * this.b;
         };
 
     }
